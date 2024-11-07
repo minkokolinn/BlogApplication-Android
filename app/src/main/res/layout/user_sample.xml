@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView android:layout_margin="10dp"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="8dp"
+    app:cardBackgroundColor="@color/colorPrimary"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/civ_userprofile_us"
+            android:layout_width="60dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            app:civ_border_color="#fff"
+            app:civ_border_width="1dp"
+            android:layout_height="60dp"
+            android:src="@drawable/social"/>
+        <TextView
+            android:id="@+id/tv_username_us"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:text="Min Ko Ko Linn"
+            android:textColor="#fff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</android.support.v7.widget.CardView>

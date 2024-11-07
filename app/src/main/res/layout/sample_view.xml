@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="410dp"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="9">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.2"
+            android:background="@drawable/samplebg"
+            android:weightSum="10">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/civ_profile_sv"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_margin="6dp"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1.5"
+                android:src="@drawable/social"
+                app:civ_border_color="#fff"
+                app:civ_border_width="1dp" />
+
+            <TextView
+                android:id="@+id/tv_name_sv"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:gravity="center_vertical"
+                android:text="Min Ko Ko Linn"
+                android:textColor="#fff"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_date_sv"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="3"
+                android:gravity=""
+                android:text="99/77/2012"
+                android:textColor="#fff"
+                android:textSize="16sp" />
+
+            <ImageButton
+                android:id="@+id/ib_menu_sv"
+                android:paddingRight="8dp"
+                android:src="@drawable/menupost"
+                android:background="@drawable/transparent"
+                android:layout_marginRight="8dp"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_post_sv"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4"
+            android:scaleType="fitXY"
+            android:src="@drawable/social" />
+
+        <TextView
+            android:id="@+id/tv_title_sv"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            android:layout_weight="1.1"
+            android:gravity="center_vertical"
+            android:maxLength="24"
+            android:text="HelloMingalarmmmmmmmmmmmmm"
+            android:textColor="#000"
+            android:textSize="19sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_desc_sv"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            android:layout_weight="2.6"
+            android:maxLength="120"
+            android:text="mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm"
+            android:textColor="#000"
+            android:textSize="17sp" />
+    </LinearLayout>
+</android.support.v7.widget.CardView>

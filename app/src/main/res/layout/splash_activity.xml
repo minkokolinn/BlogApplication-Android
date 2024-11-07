@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:weightSum="3"
+    android:background="#fff"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/images" />
+
+    <ImageView
+        android:layout_weight="1"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/blog2" />
+
+    <LinearLayout
+        android:layout_marginTop="18dp"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <TextView
+            android:layout_marginTop="24dp"
+            android:fontFamily="serif"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textSize="21sp"
+            android:text="WELCOME FROM BLOG APPLICATION"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <ProgressBar
+            android:layout_marginTop="20dp"
+            android:id="@+id/progressbar"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:max="100"
+            android:progress="0"
+            android:progressBackgroundTint="#b0b1b1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:progressTint="#00d2c6"
+            />
+    </LinearLayout>
+</LinearLayout>

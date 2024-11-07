@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <ImageButton
+            android:id="@+id/ib_back_ra"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="8dp"
+            android:background="@color/colorPrimary"
+            android:src="@drawable/ic_arrow_back_black_24dp" />
+        <TextView
+            android:gravity="center"
+            android:fontFamily="monospace"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:text="REGISTRATION"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </FrameLayout>
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/civ_ra"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/ic_account_circle_black_24dp"
+        app:civ_border_color="@color/colorPrimary"
+        app:civ_border_width="2dp" />
+
+    <android.support.v7.widget.CardView
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        app:cardCornerRadius="20dp">
+
+        <EditText
+            android:id="@+id/et_name_ra"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:hint="Enter Your Name"
+            android:inputType="textPersonName" />
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        app:cardCornerRadius="20dp">
+
+        <EditText
+            android:id="@+id/et_email_ra"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:hint="Enter Your Email"
+            android:inputType="textEmailAddress" />
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        app:cardCornerRadius="20dp">
+
+        <EditText
+            android:id="@+id/et_pass_ra"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:hint="Enter Password"
+            android:inputType="textPassword" />
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        app:cardCornerRadius="20dp">
+
+        <EditText
+            android:id="@+id/et_cpass_ra"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:hint="Enter Confirm Password"
+            android:inputType="textPassword" />
+    </android.support.v7.widget.CardView>
+
+    <Button
+        android:id="@+id/btn_reg_ra"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_margin="15dp"
+        android:background="@drawable/btnbg"
+        android:text="Click To register"
+        android:textColor="#fff"
+        android:textSize="18dp" />
+</LinearLayout>
